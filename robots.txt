@@ -1,4 +1,1873 @@
-User-agent: *
-Allow: /
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-Sitemap: https://onepageservices.com/sitemap.xml
+<title>Onepage Global | Real Estate Finance & Property Support</title>
+
+<meta name="description" content="Onepage Global provides dedicated professionals for real estate accounting, FP&A, underwriting and deals, property management support, and customer and tenant relations.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://onepageglobal.com/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--navy:#08284b;
+--blue:#0879d1;
+--muted:#60758b;
+--line:#dce7f1;
+--soft:#f6f9fc;
+--white:#ffffff;
+--ink:#142b43;
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+margin:0;
+font-family:"DM Sans",sans-serif;
+color:var(--ink);
+line-height:1.55;
+background:#fff;
+}
+
+h1,h2,h3,h4{
+font-family:Manrope,sans-serif;
+line-height:1.08;
+margin:0;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.container{
+width:min(1180px,92%);
+margin:auto;
+}
+
+/* NAVIGATION */
+
+nav{
+position:sticky;
+top:0;
+z-index:50;
+background:rgba(255,255,255,.97);
+backdrop-filter:blur(14px);
+border-bottom:1px solid var(--line);
+}
+
+.nav{
+height:74px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.brand{
+display:flex;
+gap:16px;
+align-items:center;
+}
+
+.logo{
+font:800 22px Manrope;
+color:var(--navy);
+letter-spacing:1px;
+}
+
+.logo span{
+display:block;
+text-align:center;
+font-size:9px;
+letter-spacing:5px;
+}
+
+.tag{
+font-size:12px;
+color:var(--muted);
+border-left:1px solid var(--line);
+padding-left:16px;
+}
+
+.links{
+display:flex;
+gap:24px;
+font-size:14px;
+font-weight:700;
+}
+
+.links a:hover{
+color:var(--blue);
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+background:var(--navy);
+color:#fff;
+padding:13px 20px;
+border-radius:8px;
+font-weight:700;
+font-size:14px;
+transition:.2s;
+}
+
+.btn:hover{
+background:#0b3d70;
+transform:translateY(-1px);
+}
+
+/* HERO */
+
+.hero{
+background:
+linear-gradient(
+90deg,
+#f8fbfe 0%,
+#f8fbfe 48%,
+rgba(248,251,254,.45) 100%
+),
+url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=85")
+center/cover;
+}
+
+.hero-grid{
+min-height:640px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:45px;
+align-items:center;
+}
+
+.eyebrow{
+font-size:12px;
+letter-spacing:2px;
+font-weight:800;
+color:var(--blue);
+}
+
+.hero h1{
+font-size:clamp(45px,5.5vw,74px);
+color:var(--navy);
+margin-top:15px;
+}
+
+.hero h1 span{
+color:var(--blue);
+}
+
+.hero p{
+font-size:19px;
+color:#35516b;
+max-width:640px;
+}
+
+.chips{
+display:flex;
+gap:9px;
+flex-wrap:wrap;
+margin:22px 0;
+}
+
+.chip{
+background:#fff;
+border:1px solid var(--line);
+padding:8px 12px;
+border-radius:999px;
+font-size:12px;
+font-weight:700;
+}
+
+/* HERO VISUAL */
+
+.visual{
+background:#fff;
+border:1px solid var(--line);
+border-radius:20px;
+padding:22px;
+box-shadow:0 25px 65px rgba(8,40,75,.13);
+}
+
+.visual-top{
+display:flex;
+justify-content:space-between;
+font-size:10px;
+font-weight:800;
+color:var(--muted);
+border-bottom:1px solid var(--line);
+padding-bottom:12px;
+}
+
+.active{
+color:#27814e;
+}
+
+.panel{
+background:var(--soft);
+border:1px solid var(--line);
+border-radius:14px;
+padding:20px;
+margin-top:15px;
+}
+
+.panel h3{
+color:var(--navy);
+font-size:23px;
+}
+
+.panel p{
+font-size:13px;
+color:var(--muted);
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:9px;
+}
+
+.stat{
+background:#fff;
+border:1px solid var(--line);
+padding:11px;
+border-radius:8px;
+}
+
+.stat small{
+display:block;
+color:var(--muted);
+font-size:9px;
+}
+
+.stat strong{
+font:700 17px Manrope;
+color:var(--navy);
+}
+
+/* SECTIONS */
+
+section{
+padding:85px 0;
+}
+
+.section-head{
+display:flex;
+justify-content:space-between;
+gap:30px;
+align-items:end;
+margin-bottom:40px;
+}
+
+.section-head h2{
+font-size:45px;
+color:var(--navy);
+margin-top:8px;
+}
+
+.section-head p{
+max-width:570px;
+color:var(--muted);
+}
+
+/* OUR MODEL */
+
+.flow{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:15px;
+}
+
+.step{
+background:var(--soft);
+border:1px solid var(--line);
+border-radius:16px;
+padding:27px;
+min-height:280px;
+position:relative;
+}
+
+.num{
+font-weight:800;
+color:var(--blue);
+font-size:12px;
+}
+
+.step h3{
+font-size:19px;
+color:var(--navy);
+margin:25px 0 10px;
+}
+
+.step p{
+font-size:13px;
+color:var(--muted);
+}
+
+.label{
+font-size:9px;
+color:var(--blue);
+font-weight:800;
+letter-spacing:1px;
+margin-top:16px;
+}
+
+.result{
+margin-top:30px;
+background:linear-gradient(110deg,#092d50,#0c527f);
+color:#fff;
+border-radius:17px;
+padding:30px;
+display:grid;
+grid-template-columns:1.2fr repeat(4,1fr);
+gap:18px;
+}
+
+.result h3{
+font-size:23px;
+}
+
+.result strong{
+display:block;
+font-size:13px;
+}
+
+.result span{
+font-size:11px;
+opacity:.75;
+}
+
+/* SERVICES */
+
+.services{
+background:var(--soft);
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.card{
+background:#fff;
+border:1px solid var(--line);
+border-radius:16px;
+padding:27px;
+transition:.2s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 35px rgba(8,40,75,.08);
+}
+
+.card .eyebrow{
+font-size:10px;
+}
+
+.card h3{
+font-size:24px;
+color:var(--navy);
+margin:12px 0;
+}
+
+.card p,
+.card li{
+font-size:13px;
+color:var(--muted);
+}
+
+.card li{
+margin:7px 0;
+}
+
+/* TECHNOLOGY */
+
+.tech-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:22px;
+}
+
+.tech{
+border:1px solid var(--line);
+border-radius:16px;
+padding:27px;
+background:#fff;
+}
+
+.tech h3{
+color:var(--navy);
+font-size:20px;
+margin-bottom:15px;
+}
+
+.pill{
+display:inline-block;
+background:var(--soft);
+border:1px solid var(--line);
+padding:9px 12px;
+border-radius:8px;
+margin:4px;
+font-size:12px;
+font-weight:700;
+}
+
+.ai{
+margin-top:20px;
+background:#eaf5ff;
+border:1px solid #cfe6f8;
+border-radius:17px;
+padding:30px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+}
+
+.ai h3{
+font-size:30px;
+color:var(--navy);
+margin-top:8px;
+}
+
+.ai p,
+.ai li{
+font-size:13px;
+color:var(--muted);
+}
+
+/* ABOUT */
+
+.about{
+background:var(--soft);
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:55px;
+align-items:center;
+}
+
+.about-image{
+min-height:400px;
+border-radius:20px;
+background:
+url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=85")
+center/cover;
+}
+
+.about h2,
+.contact h2{
+font-size:45px;
+color:var(--navy);
+margin-top:8px;
+}
+
+.about p{
+color:var(--muted);
+font-size:15px;
+}
+
+.founder{
+border-left:4px solid var(--blue);
+padding-left:16px;
+margin-top:20px;
+}
+
+.founder strong{
+color:var(--navy);
+font-family:Manrope;
+}
+
+/* CAREERS */
+
+.career{
+background:linear-gradient(110deg,#092d50,#0c527f);
+color:#fff;
+border-radius:20px;
+padding:45px;
+display:flex;
+justify-content:space-between;
+gap:25px;
+align-items:center;
+}
+
+.career h2{
+font-size:40px;
+}
+
+.career p{
+opacity:.82;
+max-width:600px;
+}
+
+.btn-white{
+background:#fff;
+color:var(--navy);
+}
+
+/* CONTACT */
+
+.contact{
+background:var(--soft);
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:45px;
+}
+
+.contact h2{
+font-size:48px;
+}
+
+.contact-card,
+.form{
+background:#fff;
+border:1px solid var(--line);
+border-radius:16px;
+padding:27px;
+margin-top:22px;
+}
+
+.item{
+padding:14px 0;
+border-bottom:1px solid var(--line);
+}
+
+.item:last-child{
+border:0;
+}
+
+.item small{
+display:block;
+color:var(--muted);
+font-size:11px;
+}
+
+.item strong{
+color:var(--navy);
+}
+
+.field{
+margin-bottom:13px;
+}
+
+.field label{
+display:block;
+font-size:12px;
+font-weight:700;
+margin-bottom:5px;
+}
+
+.field input,
+.field select,
+.field textarea{
+width:100%;
+padding:11px;
+border:1px solid #cfdce8;
+border-radius:7px;
+font:inherit;
+}
+
+.field textarea{
+min-height:110px;
+resize:vertical;
+}
+
+.consent{
+font-size:11px;
+color:var(--muted);
+margin:12px 0;
+}
+
+.notice{
+font-size:10px;
+color:var(--muted);
+margin-top:10px;
+}
+
+/* PRIVACY */
+
+.legal-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:22px;
+}
+
+.legal{
+border:1px solid var(--line);
+border-radius:16px;
+padding:27px;
+background:#fff;
+}
+
+.legal h3{
+color:var(--navy);
+font-size:20px;
+margin-bottom:15px;
+}
+
+.legal h4{
+font-size:14px;
+color:var(--navy);
+margin-top:18px;
+}
+
+.legal p{
+font-size:12px;
+color:var(--muted);
+}
+
+/* FOOTER */
+
+footer{
+background:#061d35;
+color:#fff;
+padding:35px 0;
+}
+
+.footer{
+display:flex;
+justify-content:space-between;
+}
+
+.footer .logo{
+color:#fff;
+}
+
+.footer p{
+font-size:11px;
+opacity:.65;
+}
+
+.footer-links{
+display:flex;
+gap:18px;
+font-size:11px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+.hero-grid,
+.about-grid,
+.contact-grid,
+.tech-grid,
+.legal-grid{
+grid-template-columns:1fr;
+}
+
+.flow{
+grid-template-columns:repeat(3,1fr);
+}
+
+.result{
+grid-template-columns:1fr 1fr;
+}
+
+.cards{
+grid-template-columns:repeat(2,1fr);
+}
+
+.section-head{
+display:block;
+}
+
+}
+
+@media(max-width:700px){
+
+.links,
+.tag{
+display:none;
+}
+
+.hero-grid{
+padding:55px 0;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.flow,
+.cards,
+.result{
+grid-template-columns:1fr;
+}
+
+.section-head h2,
+.about h2,
+.contact h2{
+font-size:36px;
+}
+
+.career{
+display:block;
+padding:30px;
+}
+
+.career h2{
+font-size:32px;
+}
+
+.career .btn{
+margin-top:15px;
+}
+
+.ai{
+grid-template-columns:1fr;
+}
+
+.footer{
+display:block;
+}
+
+.footer-links{
+margin-top:18px;
+flex-wrap:wrap;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+<div class="container nav">
+
+<a class="brand" href="#home">
+
+<div class="logo">
+ONEPAGE
+<span>GLOBAL</span>
+</div>
+
+<div class="tag">
+Real Estate Finance. Simplified.
+</div>
+
+</a>
+
+<div class="links">
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#model">Our Model</a>
+<a href="#technology">Technology</a>
+<a href="#careers">Careers</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+</nav>
+
+
+<main id="home">
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="eyebrow">
+DEDICATED REAL ESTATE FINANCE SUPPORT
+</div>
+
+<h1>
+You manage the work.
+<br>
+<span>We manage the quality.</span>
+</h1>
+
+<p>
+One dedicated professional. Flexible responsibilities. Structured quality assurance. Support built around the way your real estate business actually operates.
+</p>
+
+<div class="chips">
+
+<span class="chip">
+Dedicated Professional
+</span>
+
+<span class="chip">
+Quality Assurance
+</span>
+
+<span class="chip">
+Flexible Support
+</span>
+
+</div>
+
+<a class="btn" href="#contact">
+Connect With Us →
+</a>
+
+</div>
+
+
+<div class="visual">
+
+<div class="visual-top">
+
+<span>
+ONEPAGE • FINANCE OPERATIONS
+</span>
+
+<span class="active">
+● ACTIVE MODEL
+</span>
+
+</div>
+
+
+<div class="panel">
+
+<h3>
+A person, not a package.
+</h3>
+
+<p>
+Your professional can support accounting, FP&A, underwriting, property operations and customer workflows according to your priorities.
+</p>
+
+
+<div class="stats">
+
+<div class="stat">
+<small>MODEL</small>
+<strong>Dedicated</strong>
+</div>
+
+<div class="stat">
+<small>CONTROL</small>
+<strong>You</strong>
+</div>
+
+<div class="stat">
+<small>QA</small>
+<strong>Onepage</strong>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- OUR MODEL -->
+
+<section id="model">
+
+<div class="container">
+
+<div class="section-head">
+
+<div>
+
+<div class="eyebrow">
+OUR MODEL
+</div>
+
+<h2>
+Simple. Clear. Effective.
+</h2>
+
+</div>
+
+<p>
+You stay in control of the work. Onepage provides the professional, operating structure and quality assurance behind it.
+</p>
+
+</div>
+
+
+<div class="flow">
+
+
+<div class="step">
+
+<div class="num">01</div>
+
+<h3>
+We Assign
+</h3>
+
+<p>
+We identify and assign the right dedicated professional based on your requirements and domain needs.
+</p>
+
+<div class="label">
+RIGHT PEOPLE
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="num">02</div>
+
+<h3>
+You Allocate
+</h3>
+
+<p>
+You decide tasks, priorities, deadlines and workload based on your business needs.
+</p>
+
+<div class="label">
+YOUR CONTROL
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="num">03</div>
+
+<h3>
+Professional Works
+</h3>
+
+<p>
+The dedicated professional works directly as an extension of your team.
+</p>
+
+<div class="label">
+DIRECT DELIVERY
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="num">04</div>
+
+<h3>
+We Review
+</h3>
+
+<p>
+Onepage performs quality checks and reviews deliverables to maintain accuracy and discipline.
+</p>
+
+<div class="label">
+QUALITY ASSURANCE
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="num">05</div>
+
+<h3>
+We Support
+</h3>
+
+<p>
+Ongoing operating support, escalation handling, process discipline and continuity.
+</p>
+
+<div class="label">
+ONGOING SUPPORT
+</div>
+
+</div>
+
+
+<div class="step">
+
+<div class="num">06</div>
+
+<h3>
+Improve & Scale
+</h3>
+
+<p>
+Responsibilities, workflows and capacity can evolve as requirements change.
+</p>
+
+<div class="label">
+SCALE WITH YOU
+</div>
+
+</div>
+
+</div>
+
+
+<div class="result">
+
+<div>
+
+<h3>
+You manage the work.
+<br>
+We manage the quality.
+</h3>
+
+</div>
+
+<div>
+<strong>Dedicated Capacity</strong>
+<span>One accountable professional.</span>
+</div>
+
+<div>
+<strong>Your Priorities</strong>
+<span>Tasks allocated by you.</span>
+</div>
+
+<div>
+<strong>Quality Layer</strong>
+<span>Onepage review & support.</span>
+</div>
+
+<div>
+<strong>Flexible</strong>
+<span>Adapt as workload evolves.</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services" class="services">
+
+<div class="container">
+
+<div class="section-head">
+
+<div>
+
+<div class="eyebrow">
+SERVICES
+</div>
+
+<h2>
+Real estate finance, end to end.
+</h2>
+
+</div>
+
+<p>
+A flexible mix of finance, property operations and customer-facing responsibilities.
+</p>
+
+</div>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="eyebrow">
+01 / ACCOUNTING
+</div>
+
+<h3>
+Accounting
+</h3>
+
+<p>
+Property and corporate accounting support.
+</p>
+
+<ul>
+
+<li>Property accounting & R2R / GL</li>
+<li>Invoice generation & billing</li>
+<li>AP / AR, collections & reconciliations</li>
+<li>Month-end close & financial reporting</li>
+<li>CAM, rent-roll & NOI analysis</li>
+<li>Lease accounting / IFRS 16</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<div class="eyebrow">
+02 / FP&A
+</div>
+
+<h3>
+Financial Planning & Analysis
+</h3>
+
+<p>
+Financial visibility for planning and decisions.
+</p>
+
+<ul>
+
+<li>Budgeting & forecasting</li>
+<li>Variance analysis</li>
+<li>Cash-flow & working capital</li>
+<li>DSO & KPI / MIS reporting</li>
+<li>Financial modelling & scenarios</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<div class="eyebrow">
+03 / UNDERWRITING & DEALS
+</div>
+
+<h3>
+Underwriting & Deals
+</h3>
+
+<p>
+Financial support across acquisitions and transactions.
+</p>
+
+<ul>
+
+<li>Acquisition screening & underwriting</li>
+<li>Property economics & modelling</li>
+<li>IRR, equity multiple & cap rate</li>
+<li>Debt / financing analysis</li>
+<li>Financial due diligence</li>
+<li>Transaction & post-close support</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<div class="eyebrow">
+04 / PROPERTY MANAGEMENT
+</div>
+
+<h3>
+Property Management Support
+</h3>
+
+<p>
+Operational support for tenant, lease, vendor and property workflows.
+</p>
+
+<ul>
+
+<li>Lease & tenant data administration</li>
+<li>Rent-roll & occupancy updates</li>
+<li>Tenant onboarding & move-in support</li>
+<li>Maintenance / work-order coordination</li>
+<li>Vendor coordination & invoice follow-up</li>
+<li>Property reporting & data updates</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<div class="eyebrow">
+05 / CUSTOMER RELATIONS
+</div>
+
+<h3>
+Customer & Tenant Relations
+</h3>
+
+<p>
+Support for communication, follow-ups and relationship workflows.
+</p>
+
+<ul>
+
+<li>Tenant / customer query handling</li>
+<li>Email & communication management</li>
+<li>CRM updates & record maintenance</li>
+<li>Onboarding & documentation follow-up</li>
+<li>Renewal & payment follow-ups</li>
+<li>Issue escalation & status tracking</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TECHNOLOGY -->
+
+<section id="technology">
+
+<div class="container">
+
+<div class="section-head">
+
+<div>
+
+<div class="eyebrow">
+TECHNOLOGY
+</div>
+
+<h2>
+Built around your tech stack.
+</h2>
+
+</div>
+
+<p>
+Technology environments we can support across property management, accounting, analytics and productivity.
+</p>
+
+</div>
+
+
+<div class="tech-grid">
+
+
+<div class="tech">
+
+<h3>
+Property Management & Real Estate
+</h3>
+
+<span class="pill">Yardi</span>
+<span class="pill">MRI Software</span>
+<span class="pill">AppFolio</span>
+<span class="pill">RealPage</span>
+<span class="pill">Buildium</span>
+<span class="pill">Entrata</span>
+<span class="pill">Propertyware</span>
+
+</div>
+
+
+<div class="tech">
+
+<h3>
+Accounting & Finance
+</h3>
+
+<span class="pill">QuickBooks</span>
+<span class="pill">Xero</span>
+<span class="pill">Sage</span>
+<span class="pill">Tally</span>
+<span class="pill">Zoho Books</span>
+<span class="pill">Excel</span>
+<span class="pill">Power BI</span>
+<span class="pill">Microsoft 365</span>
+
+</div>
+
+</div>
+
+
+<div class="ai">
+
+<div>
+
+<div class="eyebrow">
+AI & AUTOMATION
+</div>
+
+<h3>
+AI-enabled finance.
+</h3>
+
+<p>
+AI does not replace financial judgment. It accelerates the work around it.
+</p>
+
+</div>
+
+
+<ul>
+
+<li>Data extraction assistance</li>
+<li>Reporting assistance</li>
+<li>Variance identification</li>
+<li>Reconciliation assistance</li>
+<li>Receivables analysis</li>
+<li>Underwriting data preparation</li>
+<li>Document processing</li>
+<li>Workflow automation</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+<div class="container about-grid">
+
+<div class="about-image">
+</div>
+
+
+<div>
+
+<div class="eyebrow">
+ABOUT ONEPAGE GLOBAL
+</div>
+
+<h2>
+Built around how real estate actually works.
+</h2>
+
+<p>
+Onepage Global helps real estate businesses build dependable finance operations through dedicated professionals, structured processes and practical technology.
+</p>
+
+<p>
+Our approach is designed around real-world accounting, FP&A, real estate finance and property-process requirements.
+</p>
+
+<div class="founder">
+
+<strong>
+Founder-led. Finance-focused.
+</strong>
+
+<br>
+
+<span>
+Built with practical end-to-end finance and real estate process experience.
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CAREERS -->
+
+<section id="careers">
+
+<div class="container">
+
+<div class="career">
+
+<div>
+
+<div class="eyebrow" style="color:#8ed5f1">
+CAREERS
+</div>
+
+<h2>
+Build the future of real estate finance.
+</h2>
+
+<p>
+We are looking for finance professionals who enjoy ownership, problem-solving, real estate and working directly with clients.
+</p>
+
+</div>
+
+<a class="btn btn-white" href="#contact">
+Explore Opportunities →
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<div class="container contact-grid">
+
+
+<div>
+
+<div class="eyebrow">
+CONTACT
+</div>
+
+<h2>
+Let's build the right finance capacity for your business.
+</h2>
+
+<p>
+Tell us what you need help with, the systems you use and the type of professional you are looking for.
+</p>
+
+
+<div class="contact-card">
+
+<div class="item">
+
+<small>
+Business
+</small>
+
+<strong>
+Onepage Global
+</strong>
+
+</div>
+
+
+<div class="item">
+
+<small>
+Location
+</small>
+
+<strong>
+Mumbai, India · Serving Globally
+</strong>
+
+</div>
+
+
+<div class="item">
+
+<small>
+Email
+</small>
+
+<strong>
+<a href="mailto:info@onepageglobal.com">
+info@onepageglobal.com
+</a>
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="form">
+
+<h3 style="color:var(--navy)">
+Tell us what you need
+</h3>
+
+<p>
+Share your requirements and we'll get back to you.
+</p>
+
+
+<form
+action="https://formsubmit.co/info@onepageglobal.com"
+method="POST"
+>
+
+<input
+type="hidden"
+name="_subject"
+value="New Onepage Global Website Enquiry"
+>
+
+<input
+type="hidden"
+name="_template"
+value="table"
+>
+
+<input
+type="hidden"
+name="_next"
+value="https://onepageglobal.com/?submitted=1#contact"
+>
+
+
+<div class="field">
+
+<label>
+Name *
+</label>
+
+<input
+name="name"
+required
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Company *
+</label>
+
+<input
+name="company"
+required
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Business Email *
+</label>
+
+<input
+name="email"
+type="email"
+required
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Phone
+</label>
+
+<input
+name="phone"
+type="tel"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Service *
+</label>
+
+<select name="service" required>
+
+<option value="">
+Select an area
+</option>
+
+<option>
+Accounting
+</option>
+
+<option>
+FP&A
+</option>
+
+<option>
+Underwriting & Deals
+</option>
+
+<option>
+Property Management Support
+</option>
+
+<option>
+Customer & Tenant Relations
+</option>
+
+<option>
+Multiple areas / Other
+</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Brief requirements *
+</label>
+
+<textarea
+name="message"
+required
+placeholder="Tell us about the role, workload, systems and support you need."
+></textarea>
+
+</div>
+
+
+<div class="consent">
+
+<input
+type="checkbox"
+required
+>
+
+I agree that Onepage Global may use the information submitted to respond to my enquiry.
+
+</div>
+
+
+<button
+class="btn"
+type="submit"
+style="border:0;cursor:pointer"
+>
+
+Submit Enquiry →
+
+</button>
+
+
+<div class="notice">
+
+Please do not submit passwords, bank credentials, tenant personal data or confidential financial files through this public form.
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRIVACY & TERMS -->
+
+<section id="privacy">
+
+<div class="container">
+
+<div class="section-head">
+
+<div>
+
+<div class="eyebrow">
+PRIVACY & TERMS
+</div>
+
+<h2>
+Clear expectations.
+</h2>
+
+</div>
+
+<p>
+Practical website notices to be reviewed by qualified legal counsel before launch.
+</p>
+
+</div>
+
+
+<div class="legal-grid">
+
+
+<div class="legal">
+
+<h3>
+Privacy Notice
+</h3>
+
+<h4>
+Information collected
+</h4>
+
+<p>
+We may collect your name, company name, business email, phone number and information you choose to include in an enquiry.
+</p>
+
+
+<h4>
+Use of information
+</h4>
+
+<p>
+Information is used to respond to requests, understand potential service requirements and communicate with prospective clients.
+</p>
+
+
+<h4>
+Data sharing
+</h4>
+
+<p>
+We do not sell personal information submitted through this website. Necessary service providers may process information for website or business operations.
+</p>
+
+
+<h4>
+Security
+</h4>
+
+<p>
+Reasonable technical and organisational measures should be used to protect information against unauthorised access, loss or misuse.
+</p>
+
+</div>
+
+
+<div class="legal">
+
+<h3>
+Website Terms
+</h3>
+
+<h4>
+General information
+</h4>
+
+<p>
+Website content is informational and is not legal, tax, investment or other professional advice.
+</p>
+
+
+<h4>
+Service scope
+</h4>
+
+<p>
+Responsibilities, deliverables, confidentiality, data handling and commercial terms are agreed separately with each client.
+</p>
+
+
+<h4>
+Third-party technology
+</h4>
+
+<p>
+Software references describe technology environments that may be supported and do not imply endorsement, certification, partnership or affiliation.
+</p>
+
+
+<h4>
+Changes
+</h4>
+
+<p>
+Website content and services may be updated from time to time. Client engagements are governed by their applicable agreements.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer">
+
+<div>
+
+<div class="logo">
+ONEPAGE
+<span>GLOBAL</span>
+</div>
+
+<p>
+Real Estate Finance. Simplified.
+</p>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="#services">
+Services
+</a>
+
+<a href="#model">
+Our Model
+</a>
+
+<a href="#technology">
+Technology
+</a>
+
+<a href="#about">
+About
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+<a href="#privacy">
+Privacy
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
